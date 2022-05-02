@@ -23,7 +23,7 @@ import finnhub
 def generate_ophl_dataset(apiKey,dataSymbol):
     finnhub_client = finnhub.Client(apiKey)
 
-    fields = ['Time', 'Open', 'Close', 'High','Low']
+    fields = ['time', 'open', 'close', 'high','low']
 
     current_time = datetime.datetime.now()
     ts = int(current_time.timestamp())
